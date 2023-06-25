@@ -1,0 +1,400 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #FFFFFF;
+	color: #333333;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+header {
+	background-color: #660000;
+	color: #FFFFFF;
+	padding: 30px;
+}
+
+.logo {
+  float: left;
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 190px;
+  width: auto;
+  margin-top: -80px;
+}
+
+
+header h1 {
+	margin: 0;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+
+
+nav {
+	float: right;
+	margin-top: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	float: left;
+	margin-left: 20px;
+}
+
+nav a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+main {
+	margin: 20px;
+}
+
+
+
+section {
+	margin-bottom: 40px;
+
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: normal;
+
+	
+	
+}
+
+
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.dropbtn {
+  background: none;
+  border: none; 
+  font-size: 24px;
+  color: white;
+  position: relative;
+  top: -30px;
+}
+
+
+.nueva-subida {
+  position: absolute;
+  left: 20px;
+  top: 90px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+
+
+
+  #miDropzone.dragover {
+    background-color: #f7f7f7;
+  }
+
+  #miDropzone .dz-preview .dz-details {
+    display: none;
+  }
+
+
+
+
+  #miDropzone .dz-preview .dz-remove {
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  #miDropzone .dz-preview .dz-remove:hover {
+    color: #ff0000;
+  }
+
+  #miDropzone .dz-preview .dz-success-mark,
+  #miDropzone .dz-preview .dz-error-mark {
+    display: none;
+  }
+
+
+.nombre-archivo {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	
+}
+
+.barra-progreso {
+	background-color: #EEEEEE;
+	height: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.progreso {
+	background-color: #00AA00;
+	height: 20px;
+}
+
+.utorrent-contenedor {
+  background-color: #721c24;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.utorrent-contenedor .nombre-archivo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.subida-torrent {
+  background-color: #fff;
+  border: 2px solid #8b0000;
+  padding: 10px;
+  margin-top: 20px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: space-between;
+ background-color: #f2f2f2;
+ margin-bottom: 10px;
+width: 65%;
+}
+
+.subida-torrent .nombre-archivo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #8b0000;
+  margin-bottom: 10px;
+}
+
+.subida-torrent .info-archivo {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.subida-torrent .estado {
+  color: #8b0000;
+  margin-right: 10px;
+}
+
+.subida-torrent .barra-progreso {
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #8b0000;
+}
+
+.subida-torrent .progreso {
+  height: 100%;
+  background-color: #8b0000;
+}
+
+.subida-archivo {
+  margin-bottom: 10px;
+}
+
+.info-archivo {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-top: 10px;
+}
+
+.barra-progreso {
+width: 100%;
+height: 10px;
+background-color: #ddd;
+margin-top: 10px;
+position: relative;
+}
+
+.progreso {
+width: 60%;
+height: 100%;
+background-color: #4CAF50;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+
+.botones {
+	margin-top: 10px;
+
+}
+
+.botones_uno{
+	margin-left:650px;
+	margin-top: -30px;
+
+}
+
+button {
+	background-color: #800000;
+	color: white;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-right: 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #CCCCCC;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #8B0000;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #8B0000;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.abrir, .borrar, .editar {
+    background-color: #8B0000;
+    border: none;
+    color: #fff;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.container {
+			width: 400px;
+			height: 600px;
+			background-color: #fff;
+			border: 1px solid #8b0000;
+			padding: 20px;
+			overflow-y: scroll;
+			float: right;
+		}
+
+		.documento {
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #8b0000;
+		}
+
+		.documento.importante {
+			background-color: #8b0000;
+			color: #fff;
+		}
+
+		.fecha {
+			font-size: 12px;
+			color: #8b0000;
+			margin-top: 5px;
+		}
+
+		.descargar {
+			font-size: 12px;
+			color: #8b0000;
+			margin-top: 5px;
+			display: block;
+			text-align: right;
+		}
+.descargar_uno{
+
+	color: white;
+	font-size: 12px;
+	margin-top: 5px;
+	display: block;
+	text-align: right;
+
+
+}
+
+.abrir:hover, .borrar:hover, .editar:hover {
+    background-color: #fff;
+    color: #8B0000;
+    border: 1px solid #8B0000;
+}
+
+
+
+footer {
+	background-color: #8b0000;
+	padding: 10px;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+}
+
+/* CSS para el menú desplegable */
+/* CSS para el menú desplegable */
+/* CSS para el menú desplegable */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(128, 0, 32, 0.967); /* Fondo burdeo transparente */
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	z-index: 1;
+	right: 0;
+}
+
+.dropdown-content a {
+	color: white;
+
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	border-bottom: 1px solid white; /* Agrega el borde interior de color burdeo */
+}
+
+.dropdown-content a:last-child {
+	border-bottom: none; /* Evita el borde en el último elemento */
+}
+
+.dropdown-content a:hover {
+	background-color: black;
+}
+/* Mostrar el menú desplegable al hacer clic en el botón de configuración */
+.dropbtn:focus + .dropdown-content {
+	display: block;
+}
+

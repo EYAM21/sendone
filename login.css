@@ -1,0 +1,104 @@
+
+.float-form-container input[type=text],
+.float-form-container input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: white;
+  box-shadow: 0 0 5px white;
+}
+
+.float-form-container input[type=text]::placeholder,
+.float-form-container input[type=password]::placeholder {
+  color: white;
+}
+
+.float-form-container button {
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.float-form-container button:hover {
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+}
+
+.float-form-container .password-reset a {
+  color: white;
+  text-decoration: none;
+}
+
+.float-form-container .password-reset a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.fondo_login {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: none;
+}
+
+.fondo_login.mostrar-fondo {
+  backdrop-filter: blur(6px);
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+  display: block;
+}
+
+#formlogin {
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: top;
+  width: 450px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(139, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  max-height: 500px;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+#formlogin.mostrar {
+  transform: scale(1);
+}
+
+#formlogin label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+
+}
+
+.mensaje-error {
+  color: white;
+  font-size: 1.0rem;
+  margin-top: 0.25rem;
+}
+

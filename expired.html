@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Sesión Expirada</title>
+	<style>
+		body {
+			background-color: #8B0000; /* Color de fondo burdeo */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			background-color: #ffffff; /* Fondo blanco */
+			border-radius: 10px; /* Bordes redondeados */
+			padding: 20px;
+			text-align: center;
+
+            width: 40%;
+		}
+
+		.container img {
+			max-width: 100px;
+			margin-bottom: 20px;
+		}
+
+		.container p {
+			color: #000000; /* Color del mensaje negro */
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="img/ups.png" alt="Imagen Ups">
+		<h1>Su sesión ha expirado por inactividad</h1>
+	</div>
+
+    <script>
+        // Función para redirigir a la página de inicio después de unos segundos
+        function redirectToIndex() {
+            window.location.href = 'index.html'; // Redirigir a la página de inicio
+        }
+    
+        // Esperar unos segundos y luego redirigir a la página de inicio
+        setTimeout(redirectToIndex, 10000); // Cambiar el valor "5000" por la cantidad de milisegundos que desees (por ejemplo, 5000 para 5 segundos)
+    </script>
+</body>
+</html>

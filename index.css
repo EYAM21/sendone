@@ -1,0 +1,53 @@
+/* Estilos para el cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8B0000; /* Color burdeo para el fondo */
+}
+
+/* Estilos para el contenedor principal */
+.contenedor {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: -200px;
+    text-align: center;
+   
+}
+
+/* Estilos para el título */
+h1 {
+    color: #FFFFFF; /* Color blanco para el contenido */
+    font-size: 48px;
+    margin-bottom: 50px;
+    margin-top: -90px;
+
+}
+
+/* Estilos para los botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones a {
+    background-color: #FFFFFF; /* Color blanco para el fondo */
+    color: #000000; /* Color negro para el texto */
+    font-size: 24px;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 0 10px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.botones a:hover {
+    background-color: #000000; /* Color negro para el fondo */
+    color: #FFFFFF; /* Color blanco para el texto */
+    transform: scale(1.1);
+}
+
+img {
+        width: 500px;
+        height: auto;
+      }

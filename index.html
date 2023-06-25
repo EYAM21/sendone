@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sendone</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="registro.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="shortcut icon" href="img/logo3.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="contenedor">
+	  <img src="img/logo.png" alt="SenDone">
+        <h1>Transferencia y respaldo seguro de archivos</h1>
+        <div class="botones">
+            <a href="#" id="abrirLogin" >Iniciar Sesión</a>
+            <a href="#" id="abrirRegistro" >Registrarse</a>
+        </div>
+        <div class="registro-exitoso" id="mensajeRegistroExitoso" style="display: none;">¡Registro exitoso!</div>
+
+    </div>
+    <div class="fondo"></div>
+	<div id="formularioRegistro" class="formularioRegistro">
+		<form action="registro.php" method="post">
+		  <div class="seccion" id="seccionPersonal">
+			<label for="nombre">Nombre:</label>
+			<input class="campo" placeholder="Ingrese su nombre" type="text" id="nombre" name="nombre" required>
+	  
+			<label for="segundo_nombre">Segundo Nombre:</label>
+			<input class="campo" placeholder="Ingrese su segundo nombre" type="text" id="segundo_nombre" name="segundo_nombre">
+	  
+			<label for="apellido_paterno">Apellido Paterno:</label>
+			<input class="campo" placeholder="Ingrese su apellido paterno" type="text" id="apellido_paterno" name="apellido_paterno" required>
+	  
+			<label for="apellido_materno">Apellido Materno:</label>
+			<input class="campo" placeholder="Ingrese su apellido materno" type="text" id="apellido_materno" name="apellido_materno">
+	  
+			<button type="button" onclick="siguienteSeccion('seccionContacto')">Siguiente</button>
+		  </div>
+	  
+		  <div class="seccion" id="seccionContacto" style="display: none;">
+			<label for="cargo">Cargo en la Empresa:</label>
+			<input class="campo" placeholder="Ingrese su cargo dentro de la empresa" type="text" id="cargo" name="cargo" required>
+	  
+			<label for="correo">Correo Electrónico:</label>
+			<input class="campo" placeholder="Ingrese su correo electrónico" type="text" id="correo" name="correo" required>
+			<p id="correoError" class="error-correo"></p>
+	  
+			<button type="button" onclick="anteriorSeccion('seccionPersonal')">Anterior</button>
+			<button type="button" onclick="siguienteSeccion('seccionContraseña')">Siguiente</button>
+		  </div>
+	  
+		  <div class="seccion" id="seccionContraseña" style="display: none;">
+			<label for="contraseña">Contraseña:</label>
+			<input class="campo" placeholder="Ingrese su contraseña" type="password" id="contraseña" name="contraseña" required>
+			<p id="mensajeContraseña" class="error-message"></p>
+	  
+			<label for="confirmacion">Confirme su contraseña:</label>
+			<input class="campo" placeholder="Confirme su contraseña" type="password" id="confirmacion" name="confirmacion" required>
+			<p id="confirmarContrasenaError" class="error"></p>
+
+			<label for="preguntaSeguridad">Pregunta de seguridad:</label>
+  			<select id="preguntaSeguridad" name="preguntaSeguridad" required>
+    			<option value="">Seleccione una pregunta de seguridad</option>
+    			<option value="1">¿Cuál es el nombre de tu primer mascota?</option>
+    			<option value="2">¿Que superheroe querias ser de pequeño?</option>
+    			<option value="3">¿Cuál es el primer colegio donde estudiaste?</option>
+  			</select>
+
+  			<label for="respuestaSeguridad">Respuesta de seguridad:</label>
+  			<input class="campo" placeholder="Ingrese su respuesta de seguridad" type="password" id="respuestaSeguridad" name="respuestaSeguridad" required>
+	  
+			<label>
+			  <input id="acepta_terminos" type="checkbox" name="aceptar_terminos" required>
+			  Acepto los términos y condiciones de uso.
+			</label>
+			<br><br>
+			<p id="aceptar" class="error"></p>
+	  
+			<button type="button" onclick="anteriorSeccion('seccionContacto')">Anterior</button>
+			<input type="submit" value="Registrarse" id="botonRegistro">
+			<a class="botonCerrar" href="#" id="cerrarRegistro">Cerrar</a>
+		  </div>
+		</form>
+	  </div> 
+	  
+	<div class="fondo_login"></div>
+	<div id="formlogin" class="float-form-container" id="floatForm">
+	  <h2 style="color: white;">Iniciar Sesión</h2>
+	  <label for="correo"><b>Correo Electrónico</b></label>
+	  <input type="text" placeholder="Ingrese su correo" id="username" required>
+	  <p id="usernameError" class="user-correo"></p>
+	
+	  <label for="password"><b>Contraseña</b></label>
+	  <input type="password" placeholder="Ingrese su contraseña" id="password" required>
+	  <p id="mensaje-error" class="mensaje-error"></p>
+	
+	  <button id="iniciar_sesion" type="submit">Iniciar Sesión</button>
+	  <p id="fallologin" class="error-login"></p>
+	
+	
+	  <a class="botonCerrar" href="#" id="cerrarLogin">Cerrar</a>
+	  <div class="password-reset">
+		<a href="recoverypass.php">¿Olvidó su contraseña?</a>
+	  </div>
+	</div>
+	
+  	</div>
+	<script  src="index.js"></script>
+    <script  src="login.js"></script>
+</body>
+</html>

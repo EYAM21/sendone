@@ -1,0 +1,129 @@
+body {
+    background-color: #800020; /* Burdeo */
+    color: #FFFFFF; /* Letras blancas */
+    font-family: Arial, sans-serif;
+  }
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      margin-right: 100px;
+  }
+
+  img {
+      width: 500px;
+      height: auto;
+  }
+
+  h1 {
+    
+      position: relative;
+      top: -40%;
+      margin-right: -75px;
+      
+    
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    margin-left: -270px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 5px;
+  }
+  .form-group button {
+    padding: 10px 20px;
+    background-color: #000000; /* Detalles negros */
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="email"] {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    margin-bottom:10px;
+  }
+
+  input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px white;
+  }
+
+  button[type="submit"] {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+  }
+
+#preguntaSeguridad{
+
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+    width: 95%;
+}
+
+#respuestaSeguridad{
+
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+    width: 95%;
+}
+
+h2 {
+    margin-left: -500px;
+    margin-bottom: -60px; /* Ajusta el valor según sea necesario */
+    margin-top: 60px;
+  }
+  
+#respuestaver{
+ 
+    margin-left: -220px;
+    margin-bottom: -27px; /* Ajusta el valor según sea necesario */
+    margin-top: 27px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 400%;
+  
+
+}
+
+a {
+    position: absolute;
+    top: 650px;
+    left: 370px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  
+    padding: 8px 12px;
+
+    transition: background-color 0.3s ease;
+  }
+  
